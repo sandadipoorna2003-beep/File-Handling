@@ -17,7 +17,10 @@ public class MultiFiles {
 		 file.createNewFile();
 		 fos = new FileOutputStream(file);
 		 String data = "This is file "+i;
+		 String age = "23";
 		 fos.write(data.getBytes());
+		 fos.write(age.getBytes());
+		 
 		 
 		}
 		catch(IOException e) {
